@@ -1,0 +1,7 @@
+INSTALL:
+  You need ruby installed. Just place it in:
+    ~/bin
+  Make sure you have ~/bin added to your PATH
+
+USAGE
+  base64 foo.png

@@ -1,0 +1,17 @@
+#!/usr/bin/env ruby
+
+require 'base64'
+
+if ARGV.empty?
+  puts "No arguments given\n" 
+  exit 1
+end
+
+unless File.exists? ARGV[0]
+  puts "Not a file\n" 
+  exit
+end
+
+puts ARGV.at(0) +  ":\n"
+puts Base64.encode64( IO.read( ARGV[0] ) )
+
